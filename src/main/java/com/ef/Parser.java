@@ -20,7 +20,7 @@ import java.util.stream.Stream;
 @SpringBootApplication
 public class Parser {
     private static final String USAGE = "Usage:\r\n" +
-            "Load request data into a DB: java -jar \"parser.jar\" --file=access.log\r\n" +
+            "Load request data into a DB: java -jar \"parser.jar\" --accesslog=access.log\r\n" +
             "Analyze request logs: java -jar \"parser.jar\" --startDate=2017-01-01.13:00:00 --duration=hourly --threshold=100\r\n";
 
     private static final String IP_ADDRESS_BLOCKING_INFO_PATTERN = "The IP address %s had %d request(s) and will be blocked.";
